@@ -1,5 +1,7 @@
 # RNA secondary structure prediction via machine learning
 
+## Inference
+
 To predict the secondary structure using the provided trained model, run:
 ```
 python3 RNApred.py pred <input sequence>
@@ -10,3 +12,14 @@ For instance, one can run the below command.
 python3 RNApred.py pred GGGGCCUUAGCUCAGCUGGGAGAGCGCCUGCUUUGCACGCAGGAGGUCAGCGGUUCGAUCCCGCUAGGCUCCA
 ```
 This yields the secondary structure "(((((((..((((........))))((((((.......))))))....(((((.......)))))))))))).". 
+
+## Training
+
+To train a new model use the below command. 
+```
+python3 RNApred.py train <model file>
+```
+To perform inference using a new model, run the below command. 
+```
+python3 RNApred.py pred -m <model file> <input sequence>
+```

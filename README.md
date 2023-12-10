@@ -1,5 +1,9 @@
 # RNA secondary structure prediction via machine learning
 
+## Requirements
+
+This software requires numpy, pytorch, scipy, and tqdm. 
+
 ## Inference
 
 To predict the secondary structure using the provided trained model, run:

@@ -8,7 +8,7 @@ import time
 import copy
 import os
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from scipy.special import logsumexp
 from scipy.special import softmax
 
@@ -2763,7 +2763,7 @@ def givePrediction(sequence, modelname):
 
     Nstate = 20
     
-    
+
     model = torch.load(modelname)
     
     Nsample = 100
